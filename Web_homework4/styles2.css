@@ -1,0 +1,53 @@
+
+/* 类别选择器 */
+.tech-dept
+{
+background-color:#e0f7fa;/*浅绿色*/
+}
+.marketing-dept
+{
+background-color:#e3f2fd;/*浅蓝色*/
+}
+.hr-dept
+{
+background-color:#ffe0b2;/*浅橙色*/
+}
+/* 限制和不限制的 ID 选择器 */
+#special-employee
+{
+background-color:#f5f5f5;/*浅灰色*/
+border:2px solid #8e24aa;/*边框紫色实线*/
+ padding: 10px;
+}
+/*后代选择器*/
+.dept .employee-card
+{
+color:#424242;/*字体深灰色*/
+padding:10px;/*内边距*/
+border-bottom:1px solid #e0e0e0;/*底部边框：1px 实线浅灰色*/
+}
+/* 并集选择器 */
+.tech-dept,.marketing-dept,.hr-dept
+{
+font-family: Arial, sans-serif;/* 无衬线字体*/
+line-height: 1.5;/*行高*/
+}
+/* 伪类选择器 */
+.employee-card:hover
+{
+color:#fff9c4;/*淡黄色*/;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/*阴影*/
+}
+
+.employee-card:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+
+/* 伪类和类别选择器组合 */
+.high-rating:hover
+{
+color:#ffd700;
+font-weight: bold;
+text-decoration: underline;
+}
